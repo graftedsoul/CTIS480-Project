@@ -1,0 +1,9 @@
+
+
+TO DO
+
+- check all rows when the button itself is clicked on the selection page
+- fix the navigation stack of signing up :|
+- add lbs/feet support to weight height
+- add icons for trackers with json
+- json'a ufak bilgiler koy

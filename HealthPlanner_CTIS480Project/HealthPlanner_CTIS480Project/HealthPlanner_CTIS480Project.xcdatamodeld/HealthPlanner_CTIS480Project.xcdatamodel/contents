@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19H2026" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Habits" representedClassName=".Habits" syncable="YES">
+        <attribute name="trackMood" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="trackSleep" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="trackSteps" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="trackWater" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="tracked" inverseEntity="User"/>
+    </entity>
+    <entity name="LastUser" representedClassName=".LastUser" syncable="YES">
+        <attribute name="lastUser" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Mood" representedClassName=".Mood" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="mood" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="mood" inverseEntity="User"/>
+    </entity>
+    <entity name="Sleep" representedClassName=".Sleep" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="hours" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="sleep" inverseEntity="User"/>
+    </entity>
+    <entity name="Steps" representedClassName=".Steps" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="steps" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="steps" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="sex" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="mood" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mood" inverseName="user" inverseEntity="Mood"/>
+        <relationship name="sleep" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sleep" inverseName="user" inverseEntity="Sleep"/>
+        <relationship name="steps" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Steps" inverseName="user" inverseEntity="Steps"/>
+        <relationship name="tracked" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Habits" inverseName="user" inverseEntity="Habits"/>
+        <relationship name="water" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Water" inverseName="user" inverseEntity="Water"/>
+    </entity>
+    <entity name="Water" representedClassName=".Water" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="glasses" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="water" inverseEntity="User"/>
+    </entity>
+    <elements>
+        <element name="Habits" positionX="-293.28515625" positionY="45.4140625" width="128" height="118"/>
+        <element name="LastUser" positionX="-105.89453125" positionY="-84.01171875" width="128" height="58"/>
+        <element name="User" positionX="108.6953125" positionY="30.48828125" width="128" height="193"/>
+        <element name="Water" positionX="-257.68359375" positionY="310.51953125" width="128" height="88"/>
+        <element name="Mood" positionX="414.78515625" positionY="220.21875" width="128" height="88"/>
+        <element name="Steps" positionX="34.66015625" positionY="380.1015625" width="128" height="88"/>
+        <element name="Sleep" positionX="325.8359375" positionY="354.90625" width="128" height="88"/>
+    </elements>
+</model>
