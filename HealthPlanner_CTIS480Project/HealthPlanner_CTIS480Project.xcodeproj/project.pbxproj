@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA17D6072A39B7EB00D2139F /* LastUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D6052A39B7EB00D2139F /* LastUser+CoreDataClass.swift */; };
+		BA17D6082A39B7EB00D2139F /* LastUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D6062A39B7EB00D2139F /* LastUser+CoreDataProperties.swift */; };
+		BA17D60F2A39ECCF00D2139F /* Sleep+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D6092A39ECCF00D2139F /* Sleep+CoreDataClass.swift */; };
+		BA17D6102A39ECCF00D2139F /* Sleep+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D60A2A39ECCF00D2139F /* Sleep+CoreDataProperties.swift */; };
+		BA17D6112A39ECCF00D2139F /* Mood+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D60B2A39ECCF00D2139F /* Mood+CoreDataClass.swift */; };
+		BA17D6122A39ECCF00D2139F /* Mood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D60C2A39ECCF00D2139F /* Mood+CoreDataProperties.swift */; };
+		BA17D6132A39ECCF00D2139F /* Steps+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D60D2A39ECCF00D2139F /* Steps+CoreDataClass.swift */; };
+		BA17D6142A39ECCF00D2139F /* Steps+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D60E2A39ECCF00D2139F /* Steps+CoreDataProperties.swift */; };
+		BA17D6162A39EDCD00D2139F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = BA17D6152A39EDCD00D2139F /* data.json */; };
+		BA17D61A2A3A05D900D2139F /* alert.wav in Resources */ = {isa = PBXBuildFile; fileRef = BA17D6182A3A05D900D2139F /* alert.wav */; };
+		BA17D61B2A3A05D900D2139F /* water.wav in Resources */ = {isa = PBXBuildFile; fileRef = BA17D6192A3A05D900D2139F /* water.wav */; };
+		BA17D61D2A3A115500D2139F /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17D61C2A3A115500D2139F /* RadioButton.swift */; };
+		BA88A78B2A38A895005B1A46 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88A78A2A38A895005B1A46 /* HomeVC.swift */; };
+		BA88A78D2A38A93A005B1A46 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88A78C2A38A93A005B1A46 /* SettingsVC.swift */; };
+		BA88A78F2A38A946005B1A46 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88A78E2A38A946005B1A46 /* AboutVC.swift */; };
+		BACDD4752A374D1600412C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4742A374D1600412C4D /* AppDelegate.swift */; };
+		BACDD4772A374D1600412C4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4762A374D1600412C4D /* SceneDelegate.swift */; };
+		BACDD47C2A374D1600412C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACDD47A2A374D1600412C4D /* Main.storyboard */; };
+		BACDD47F2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BACDD47D2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodeld */; };
+		BACDD4812A374D1800412C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACDD4802A374D1800412C4D /* Assets.xcassets */; };
+		BACDD4842A374D1800412C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BACDD4822A374D1800412C4D /* LaunchScreen.storyboard */; };
+		BACDD4912A37635800412C4D /* Habits+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD48B2A37635800412C4D /* Habits+CoreDataClass.swift */; };
+		BACDD4922A37635800412C4D /* Habits+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD48C2A37635800412C4D /* Habits+CoreDataProperties.swift */; };
+		BACDD4932A37635800412C4D /* Water+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD48D2A37635800412C4D /* Water+CoreDataClass.swift */; };
+		BACDD4942A37635800412C4D /* Water+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD48E2A37635800412C4D /* Water+CoreDataProperties.swift */; };
+		BACDD4952A37635800412C4D /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD48F2A37635800412C4D /* User+CoreDataClass.swift */; };
+		BACDD4962A37635800412C4D /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4902A37635800412C4D /* User+CoreDataProperties.swift */; };
+		BACDD4982A37684300412C4D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4972A37684300412C4D /* DataManager.swift */; };
+		BACDD49C2A377BCB00412C4D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD49B2A377BCB00412C4D /* SwiftyJSON.swift */; };
+		BACDD4A22A379E7E00412C4D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4A12A379E7E00412C4D /* MainVC.swift */; };
+		BACDD4A42A37A4B600412C4D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4A32A37A4B600412C4D /* CheckBox.swift */; };
+		BACDD4A62A37A5EF00412C4D /* SelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACDD4A52A37A5EF00412C4D /* SelectVC.swift */; };
+		BACDD4A82A38A20B00412C4D /* to-do.txt in Resources */ = {isa = PBXBuildFile; fileRef = BACDD4A72A38A20B00412C4D /* to-do.txt */; };
+		BAEC6C362A3A513500063EC5 /* yay.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAEC6C352A3A513500063EC5 /* yay.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6220C5DA870D1EF1A4826573 /* Pods-HealthPlanner_CTIS480Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthPlanner_CTIS480Project.debug.xcconfig"; path = "Target Support Files/Pods-HealthPlanner_CTIS480Project/Pods-HealthPlanner_CTIS480Project.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A1A30B24DECDB5ABE02CFC /* Pods_HealthPlanner_CTIS480Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthPlanner_CTIS480Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA17D6052A39B7EB00D2139F /* LastUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA17D6062A39B7EB00D2139F /* LastUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA17D6092A39ECCF00D2139F /* Sleep+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA17D60A2A39ECCF00D2139F /* Sleep+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA17D60B2A39ECCF00D2139F /* Mood+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mood+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA17D60C2A39ECCF00D2139F /* Mood+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mood+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA17D60D2A39ECCF00D2139F /* Steps+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA17D60E2A39ECCF00D2139F /* Steps+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Steps+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA17D6152A39EDCD00D2139F /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		BA17D6182A3A05D900D2139F /* alert.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alert.wav; sourceTree = "<group>"; };
+		BA17D6192A3A05D900D2139F /* water.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = water.wav; sourceTree = "<group>"; };
+		BA17D61C2A3A115500D2139F /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		BA88A78A2A38A895005B1A46 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BA88A78C2A38A93A005B1A46 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BA88A78E2A38A946005B1A46 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		BACDD4712A374D1600412C4D /* HealthPlanner_CTIS480Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthPlanner_CTIS480Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACDD4742A374D1600412C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BACDD4762A374D1600412C4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BACDD47B2A374D1600412C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BACDD47E2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthPlanner_CTIS480Project.xcdatamodel; sourceTree = "<group>"; };
+		BACDD4802A374D1800412C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BACDD4832A374D1800412C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BACDD4852A374D1800412C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACDD48B2A37635800412C4D /* Habits+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habits+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BACDD48C2A37635800412C4D /* Habits+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habits+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BACDD48D2A37635800412C4D /* Water+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BACDD48E2A37635800412C4D /* Water+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BACDD48F2A37635800412C4D /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BACDD4902A37635800412C4D /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BACDD4972A37684300412C4D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BACDD49B2A377BCB00412C4D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		BACDD4A12A379E7E00412C4D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		BACDD4A32A37A4B600412C4D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		BACDD4A52A37A5EF00412C4D /* SelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVC.swift; sourceTree = "<group>"; };
+		BACDD4A72A38A20B00412C4D /* to-do.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "to-do.txt"; sourceTree = "<group>"; };
+		BAEC6C352A3A513500063EC5 /* yay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yay.wav; sourceTree = "<group>"; };
+		DC0041C90CE595ABE0252C9C /* Pods-HealthPlanner_CTIS480Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthPlanner_CTIS480Project.release.xcconfig"; path = "Target Support Files/Pods-HealthPlanner_CTIS480Project/Pods-HealthPlanner_CTIS480Project.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BACDD46E2A374D1600412C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC7F811B7E5FAF9E9FD2EC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8A1A30B24DECDB5ABE02CFC /* Pods_HealthPlanner_CTIS480Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA17D6172A3A05D900D2139F /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BAEC6C352A3A513500063EC5 /* yay.wav */,
+				BA17D6182A3A05D900D2139F /* alert.wav */,
+				BA17D6192A3A05D900D2139F /* water.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		BACDD4682A374D1600412C4D = {
+			isa = PBXGroup;
+			children = (
+				BACDD49B2A377BCB00412C4D /* SwiftyJSON.swift */,
+				BA17D6092A39ECCF00D2139F /* Sleep+CoreDataClass.swift */,
+				BA17D60A2A39ECCF00D2139F /* Sleep+CoreDataProperties.swift */,
+				BA17D60B2A39ECCF00D2139F /* Mood+CoreDataClass.swift */,
+				BA17D60C2A39ECCF00D2139F /* Mood+CoreDataProperties.swift */,
+				BA17D60D2A39ECCF00D2139F /* Steps+CoreDataClass.swift */,
+				BA17D60E2A39ECCF00D2139F /* Steps+CoreDataProperties.swift */,
+				BA17D6052A39B7EB00D2139F /* LastUser+CoreDataClass.swift */,
+				BA17D6062A39B7EB00D2139F /* LastUser+CoreDataProperties.swift */,
+				BACDD48B2A37635800412C4D /* Habits+CoreDataClass.swift */,
+				BACDD48C2A37635800412C4D /* Habits+CoreDataProperties.swift */,
+				BACDD48D2A37635800412C4D /* Water+CoreDataClass.swift */,
+				BACDD48E2A37635800412C4D /* Water+CoreDataProperties.swift */,
+				BACDD48F2A37635800412C4D /* User+CoreDataClass.swift */,
+				BACDD4902A37635800412C4D /* User+CoreDataProperties.swift */,
+				BACDD4A72A38A20B00412C4D /* to-do.txt */,
+				BA17D6152A39EDCD00D2139F /* data.json */,
+				BACDD4732A374D1600412C4D /* HealthPlanner_CTIS480Project */,
+				BACDD4722A374D1600412C4D /* Products */,
+				C53135334CF6A024CD670C1B /* Pods */,
+				1FC7F811B7E5FAF9E9FD2EC8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BACDD4722A374D1600412C4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BACDD4712A374D1600412C4D /* HealthPlanner_CTIS480Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BACDD4732A374D1600412C4D /* HealthPlanner_CTIS480Project */ = {
+			isa = PBXGroup;
+			children = (
+				BA17D6172A3A05D900D2139F /* sounds */,
+				BACDD4742A374D1600412C4D /* AppDelegate.swift */,
+				BACDD4762A374D1600412C4D /* SceneDelegate.swift */,
+				BACDD47A2A374D1600412C4D /* Main.storyboard */,
+				BACDD4A12A379E7E00412C4D /* MainVC.swift */,
+				BACDD4A52A37A5EF00412C4D /* SelectVC.swift */,
+				BA88A78A2A38A895005B1A46 /* HomeVC.swift */,
+				BA88A78C2A38A93A005B1A46 /* SettingsVC.swift */,
+				BA88A78E2A38A946005B1A46 /* AboutVC.swift */,
+				BACDD4802A374D1800412C4D /* Assets.xcassets */,
+				BACDD4822A374D1800412C4D /* LaunchScreen.storyboard */,
+				BACDD4852A374D1800412C4D /* Info.plist */,
+				BACDD47D2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodeld */,
+				BACDD4972A37684300412C4D /* DataManager.swift */,
+				BACDD4A32A37A4B600412C4D /* CheckBox.swift */,
+				BA17D61C2A3A115500D2139F /* RadioButton.swift */,
+			);
+			path = HealthPlanner_CTIS480Project;
+			sourceTree = "<group>";
+		};
+		C53135334CF6A024CD670C1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6220C5DA870D1EF1A4826573 /* Pods-HealthPlanner_CTIS480Project.debug.xcconfig */,
+				DC0041C90CE595ABE0252C9C /* Pods-HealthPlanner_CTIS480Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BACDD4702A374D1600412C4D /* HealthPlanner_CTIS480Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACDD4882A374D1800412C4D /* Build configuration list for PBXNativeTarget "HealthPlanner_CTIS480Project" */;
+			buildPhases = (
+				C0E10F6143D6110EACC76BA4 /* [CP] Check Pods Manifest.lock */,
+				BACDD46D2A374D1600412C4D /* Sources */,
+				BACDD46E2A374D1600412C4D /* Frameworks */,
+				BACDD46F2A374D1600412C4D /* Resources */,
+				B407DE532762434FB771D044 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthPlanner_CTIS480Project;
+			productName = HealthPlanner_CTIS480Project;
+			productReference = BACDD4712A374D1600412C4D /* HealthPlanner_CTIS480Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BACDD4692A374D1600412C4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = CTIS;
+				TargetAttributes = {
+					BACDD4702A374D1600412C4D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BACDD46C2A374D1600412C4D /* Build configuration list for PBXProject "HealthPlanner_CTIS480Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BACDD4682A374D1600412C4D;
+			productRefGroup = BACDD4722A374D1600412C4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BACDD4702A374D1600412C4D /* HealthPlanner_CTIS480Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BACDD46F2A374D1600412C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDD4842A374D1800412C4D /* LaunchScreen.storyboard in Resources */,
+				BACDD4812A374D1800412C4D /* Assets.xcassets in Resources */,
+				BACDD4A82A38A20B00412C4D /* to-do.txt in Resources */,
+				BA17D6162A39EDCD00D2139F /* data.json in Resources */,
+				BA17D61B2A3A05D900D2139F /* water.wav in Resources */,
+				BACDD47C2A374D1600412C4D /* Main.storyboard in Resources */,
+				BAEC6C362A3A513500063EC5 /* yay.wav in Resources */,
+				BA17D61A2A3A05D900D2139F /* alert.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B407DE532762434FB771D044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthPlanner_CTIS480Project/Pods-HealthPlanner_CTIS480Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthPlanner_CTIS480Project/Pods-HealthPlanner_CTIS480Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthPlanner_CTIS480Project/Pods-HealthPlanner_CTIS480Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E10F6143D6110EACC76BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthPlanner_CTIS480Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACDD46D2A374D1600412C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACDD4912A37635800412C4D /* Habits+CoreDataClass.swift in Sources */,
+				BA17D61D2A3A115500D2139F /* RadioButton.swift in Sources */,
+				BA88A78B2A38A895005B1A46 /* HomeVC.swift in Sources */,
+				BACDD4A22A379E7E00412C4D /* MainVC.swift in Sources */,
+				BACDD47F2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodeld in Sources */,
+				BA17D6122A39ECCF00D2139F /* Mood+CoreDataProperties.swift in Sources */,
+				BACDD4922A37635800412C4D /* Habits+CoreDataProperties.swift in Sources */,
+				BA88A78D2A38A93A005B1A46 /* SettingsVC.swift in Sources */,
+				BACDD49C2A377BCB00412C4D /* SwiftyJSON.swift in Sources */,
+				BA17D6142A39ECCF00D2139F /* Steps+CoreDataProperties.swift in Sources */,
+				BACDD4932A37635800412C4D /* Water+CoreDataClass.swift in Sources */,
+				BACDD4952A37635800412C4D /* User+CoreDataClass.swift in Sources */,
+				BA17D60F2A39ECCF00D2139F /* Sleep+CoreDataClass.swift in Sources */,
+				BA17D6112A39ECCF00D2139F /* Mood+CoreDataClass.swift in Sources */,
+				BACDD4752A374D1600412C4D /* AppDelegate.swift in Sources */,
+				BACDD4A62A37A5EF00412C4D /* SelectVC.swift in Sources */,
+				BACDD4772A374D1600412C4D /* SceneDelegate.swift in Sources */,
+				BA17D6082A39B7EB00D2139F /* LastUser+CoreDataProperties.swift in Sources */,
+				BA17D6072A39B7EB00D2139F /* LastUser+CoreDataClass.swift in Sources */,
+				BACDD4982A37684300412C4D /* DataManager.swift in Sources */,
+				BA88A78F2A38A946005B1A46 /* AboutVC.swift in Sources */,
+				BA17D6102A39ECCF00D2139F /* Sleep+CoreDataProperties.swift in Sources */,
+				BACDD4962A37635800412C4D /* User+CoreDataProperties.swift in Sources */,
+				BACDD4A42A37A4B600412C4D /* CheckBox.swift in Sources */,
+				BACDD4942A37635800412C4D /* Water+CoreDataProperties.swift in Sources */,
+				BA17D6132A39ECCF00D2139F /* Steps+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BACDD47A2A374D1600412C4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACDD47B2A374D1600412C4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BACDD4822A374D1800412C4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BACDD4832A374D1800412C4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BACDD4862A374D1800412C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BACDD4872A374D1800412C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BACDD4892A374D1800412C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6220C5DA870D1EF1A4826573 /* Pods-HealthPlanner_CTIS480Project.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthPlanner_CTIS480Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gunaltay.HealthPlanner-CTIS480Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BACDD48A2A374D1800412C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0041C90CE595ABE0252C9C /* Pods-HealthPlanner_CTIS480Project.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthPlanner_CTIS480Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gunaltay.HealthPlanner-CTIS480Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BACDD46C2A374D1600412C4D /* Build configuration list for PBXProject "HealthPlanner_CTIS480Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACDD4862A374D1800412C4D /* Debug */,
+				BACDD4872A374D1800412C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACDD4882A374D1800412C4D /* Build configuration list for PBXNativeTarget "HealthPlanner_CTIS480Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACDD4892A374D1800412C4D /* Debug */,
+				BACDD48A2A374D1800412C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BACDD47D2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BACDD47E2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodel */,
+			);
+			currentVersion = BACDD47E2A374D1600412C4D /* HealthPlanner_CTIS480Project.xcdatamodel */;
+			path = HealthPlanner_CTIS480Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BACDD4692A374D1600412C4D /* Project object */;
+}
